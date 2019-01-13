@@ -1,0 +1,3 @@
+/home/karl07/Desktop/SFML/CMakeFiles/rebuild_cache.dir
+/home/karl07/Desktop/SFML/CMakeFiles/demo.dir
+/home/karl07/Desktop/SFML/CMakeFiles/edit_cache.dir
