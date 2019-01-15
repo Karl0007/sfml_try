@@ -4,16 +4,29 @@
 
 int main()
 {
-	sf::Window window(sf::VideoMode(500,500),"new window",sf::Style::Titlebar);
-	sf::Window window2(sf::VideoMode(200,200),"another");
+	sf::RenderWindow window(sf::VideoMode(500,500),"new window");
 	while (window.isOpen()){
-		sf::Event event,event2;
-		while (window2.pollEvent(event2) || window.pollEvent(event)){
-			std::cout << 123;
+		sf::Event event;
+		while (window.pollEvent(event)){
+			//std::cout << 123;
 			//window2.pollEvent(event2);
-			if (event2.type == sf::Event::Closed){
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
+				std::cout << "up\n";
+			}
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
+				std::cout << "down\n";
+			}
+			
+			if (event.type == sf::Event::MouseButtonPressed){
+				if (event.mouseButton.button == sf::Mouse::Right){
+					std::cout << event.mouseButton.x << std::endl;
+					std::cout << event.mouseButton.y << std::endl;
+				}
+			}
+
+			if (event.type == sf::Event::Closed){
 				window.close();
-				window2.close();
 			}
 		}
 	}

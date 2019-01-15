@@ -9,4 +9,6 @@
 /home/karl07/Desktop/SFML/main.cpp
 SFML/Graphics.hpp
 -
+bits/stdc++.h
+-
 
