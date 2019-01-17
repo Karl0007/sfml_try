@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/karl07/Desktop/SFML/main.cpp" "/home/karl07/Desktop/SFML/CMakeFiles/demo.dir/main.cpp.o"
+  "/home/karl07/Desktop/sfml_try/main.cpp" "/home/karl07/Desktop/sfml_try/CMakeFiles/demo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

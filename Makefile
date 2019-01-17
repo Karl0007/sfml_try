@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karl07/Desktop/SFML
+CMAKE_SOURCE_DIR = /home/karl07/Desktop/sfml_try
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karl07/Desktop/SFML
+CMAKE_BINARY_DIR = /home/karl07/Desktop/sfml_try
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karl07/Desktop/SFML/CMakeFiles /home/karl07/Desktop/SFML/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karl07/Desktop/sfml_try/CMakeFiles /home/karl07/Desktop/sfml_try/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karl07/Desktop/SFML/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karl07/Desktop/sfml_try/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

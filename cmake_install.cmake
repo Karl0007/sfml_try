@@ -1,4 +1,4 @@
-# Install script for directory: /home/karl07/Desktop/SFML
+# Install script for directory: /home/karl07/Desktop/sfml_try
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/karl07/Desktop/SFML/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/karl07/Desktop/sfml_try/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
