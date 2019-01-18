@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++11 -lsfml-graphics -lsfml-window -lsfml-system   CMakeFiles/demo.dir/main.cpp.o  -o demo 
+/usr/bin/c++  -std=c++11 -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio   CMakeFiles/demo.dir/main.cpp.o  -o demo 

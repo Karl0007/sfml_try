@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <bits/stdc++.h>
 
 void fun1();
@@ -11,9 +12,10 @@ sf::Text init_text(const std::wstring & s,const sf::Font & font);
 sf::Font init_font(const std::string & s);
 sf::VertexArray init_vertexarray();
 sf::View init_view ();
+sf::SoundBuffer init_buffer(const std::string & s);
+template<typename T1,typename T2>
+bool check_collision(const T1 &a,const T2 &b);
 
-
-//class　
 
 int main()
 {
@@ -119,6 +121,14 @@ bool check_collision(const T1 &a,const T2 &b){ //碰撞检测
 	return box1.intersects(box2);
 }
 
+sf::SoundBuffer init_buffer(const std::string & s){
+	sf::SoundBuffer buf;
+	if (buf.loadFromFile(s)) std::cout << "buffer success\n";
+	return buf;
+}
+
+
+
 void fun1(){
 	sf::RenderWindow window(sf::VideoMode(500,500),"new window"); //RenderWindow 绘制图形
 	sf::Color co(123,123,123,255); //设置颜色
@@ -128,6 +138,10 @@ void fun1(){
 	auto text = init_text(L"123啦hello啦world啦!",font); //中文需要宽字符
 	auto ver = init_vertexarray();
 	auto vi = init_view();
+	sf::SoundBuffer buf = init_buffer("buf.wav");
+	sf::Sound sou;
+	sou.setBuffer(buf);
+	sou.play(); // 音频
 /*	sf::View vi(sf::Vector2f(0,0),sf::Vector2f(300,300));// 设置视角的中心和大小
 	vi.setViewport(sf::FloatRect(0,0,0.5,0.5)); // 设置视角在窗口的相对位置 (起始x,起始y,x大小,y大小)
 
